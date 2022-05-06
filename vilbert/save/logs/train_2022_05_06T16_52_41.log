@@ -1,0 +1,24 @@
+2022-05-06T16:52:41 | INFO | mmf : Logging to: ./save/train.log
+2022-05-06T16:52:41 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_vilbert.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/vilbert_final.pth', 'evaluation.predict=true'])
+2022-05-06T16:52:41 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-06T16:52:41 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-06T16:52:41 | INFO | mmf_cli.run : Using seed 41712739
+2022-05-06T16:52:41 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-06T16:52:42 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-06T16:52:42 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-06T16:52:42 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-06T16:52:42 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-06T16:52:48 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-06T16:52:48 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-06T16:52:48 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-06T16:52:49 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-06T16:52:49 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-06T16:52:49 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-06T16:52:49 | INFO | mmf.utils.checkpoint : Current num updates: 22000
+2022-05-06T16:52:49 | INFO | mmf.utils.checkpoint : Current iteration: 22000
+2022-05-06T16:52:49 | INFO | mmf.utils.checkpoint : Current epoch: 83
+2022-05-06T16:52:49 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-06T16:52:49 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-06T16:53:07 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/finetune/vilbert/save/hateful_memes_vilbert_41712739/reports/hateful_memes_run_test_2022-05-06T16:53:07.csv
+2022-05-06T16:53:07 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 32
+2022-05-06T16:53:07 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.

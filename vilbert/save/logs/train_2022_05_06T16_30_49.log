@@ -1,0 +1,10 @@
+2022-05-06T16:30:49 | INFO | mmf : Logging to: ./save/train.log
+2022-05-06T16:30:49 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=finetune_vilbert.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=val', 'checkpoint.resume=save/models/model_4000.ckpt', 'evaluation.predict=true'])
+2022-05-06T16:30:49 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-06T16:30:49 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-06T16:30:49 | INFO | mmf_cli.run : Using seed 49646152
+2022-05-06T16:30:49 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-06T16:30:50 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-06T16:30:50 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-06T16:30:50 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-06T16:30:50 | INFO | mmf.trainers.mmf_trainer : Loading model
