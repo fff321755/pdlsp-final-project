@@ -1,7 +1,7 @@
 config_version: 1.0
 training:
   trainer: mmf
-  seed: 7233038
+  seed: 36947160
   experiment_name: run
   max_updates: 22000
   max_epochs: null
@@ -239,6 +239,7 @@ dataset_config:
           image_width_key: image_width
           image_height_key: image_height
     return_features_info: true
+    is_multilabel: true
 datasets: hateful_memes
 model: vilbert
 config: infer_vilbert.yaml

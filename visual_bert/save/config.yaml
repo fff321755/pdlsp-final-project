@@ -1,7 +1,7 @@
 config_version: 1.0
 training:
   trainer: mmf
-  seed: 3324342
+  seed: 28759022
   experiment_name: run
   max_updates: 22000
   max_epochs: null
@@ -179,6 +179,7 @@ dataset_config:
               - 0.12145835
               - 0.14380469
     return_features_info: true
+    is_multilabel: true
   annotations:
     train:
     - hateful_memes/defaults/annotations/train.jsonl
@@ -221,7 +222,7 @@ distributed:
   world_size: 1
   no_spawn: false
 checkpoint:
-  resume: save/best.ckpt
+  resume: save/visual_bert_final
   resume_file: null
   resume_best: false
   resume_pretrained: false

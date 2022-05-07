@@ -878,3 +878,85 @@
 2022-05-07T12:06:27 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/visual_bert/save/hateful_memes_visual_bert_3324342/reports/hateful_memes_run_test_2022-05-07T12:06:27.csv
 2022-05-07T12:06:27 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 32
 2022-05-07T12:06:27 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:25:17 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:25:17 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_visual_bert.yaml', 'model=visual_bert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/best.ckpt', 'evaluation.predict=true'])
+2022-05-07T13:25:17 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:25:17 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:25:17 | INFO | mmf_cli.run : Using seed 17765391
+2022-05-07T13:25:17 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:25:18 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:25:18 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:25:18 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:25:18 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:26:00 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:26:00 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_visual_bert.yaml', 'model=visual_bert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/visual_bert_final', 'evaluation.predict=true'])
+2022-05-07T13:26:00 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:26:00 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:26:00 | INFO | mmf_cli.run : Using seed 915780
+2022-05-07T13:26:00 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:26:01 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:26:01 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:26:01 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:26:01 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:26:07 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:26:07 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:26:07 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:26:07 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:26:07 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:26:07 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:26:07 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:26:07 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:26:07 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:26:07 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-07T13:26:07 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:28:18 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/visual_bert/save/hateful_memes_visual_bert_915780/reports/hateful_memes_run_test_2022-05-07T13:28:18.csv
+2022-05-07T13:28:18 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 235
+2022-05-07T13:28:18 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:28:55 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:28:55 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_visual_bert.yaml', 'model=visual_bert', 'dataset=hateful_memes', 'run_type=val', 'checkpoint.resume=save/visual_bert_final', 'evaluation.predict=true'])
+2022-05-07T13:28:55 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:28:55 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:28:55 | INFO | mmf_cli.run : Using seed 55819128
+2022-05-07T13:28:55 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:28:56 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:28:56 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:28:56 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:28:56 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:29:02 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:29:02 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:29:02 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:29:02 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:29:02 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:29:02 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:29:02 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:29:02 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:29:02 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:29:02 | INFO | mmf.trainers.core.evaluation_loop : Starting val inference predictions
+2022-05-07T13:29:02 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:29:11 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/visual_bert/save/hateful_memes_visual_bert_55819128/reports/hateful_memes_run_val_2022-05-07T13:29:11.csv
+2022-05-07T13:29:11 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 16
+2022-05-07T13:29:11 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:29:28 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:29:28 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_visual_bert.yaml', 'model=visual_bert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/visual_bert_final', 'evaluation.predict=true'])
+2022-05-07T13:29:28 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:29:28 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:29:28 | INFO | mmf_cli.run : Using seed 28759022
+2022-05-07T13:29:28 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:29:29 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:29:29 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:29:29 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:29:29 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:29:34 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:29:34 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:29:34 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:29:35 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:29:35 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:29:35 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:29:35 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:29:35 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:29:35 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:29:35 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-07T13:29:35 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:29:52 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/visual_bert/save/hateful_memes_visual_bert_28759022/reports/hateful_memes_run_test_2022-05-07T13:29:52.csv
+2022-05-07T13:29:52 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 32
+2022-05-07T13:29:52 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.

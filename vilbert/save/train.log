@@ -1061,3 +1061,140 @@
 2022-05-07T12:00:30 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/vilbert/save/hateful_memes_vilbert_7233038/reports/hateful_memes_run_test_2022-05-07T12:00:30.csv
 2022-05-07T12:00:30 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 235
 2022-05-07T12:00:30 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T12:38:57 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T12:38:57 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=projects/hateful_memes/configs/vilbert/defaults.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume_zoo=vilbert.finetuned.hateful_memes.direct', 'evaluation.predict=true'])
+2022-05-07T12:38:57 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T12:38:57 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T12:38:57 | INFO | mmf_cli.run : Using seed 57881649
+2022-05-07T12:38:57 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T12:38:58 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T12:38:58 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T12:38:58 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T12:38:58 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T12:39:03 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T12:39:03 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T12:39:03 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T12:39:13 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T12:39:13 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T12:39:13 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T12:39:13 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T12:39:14 | WARNING | mmf.utils.checkpoint : Missing keys ['model.bert.embeddings.position_ids'] in the checkpoint.
+If this is not your checkpoint, please open up an issue on MMF GitHub. 
+Unexpected keys if any: []
+2022-05-07T12:39:14 | WARNING | py.warnings : /home/jupyter/mmf/mmf/utils/checkpoint.py:339: UserWarning: 'optimizer' key is not present in the checkpoint asked to be loaded. Skipping.
+  "'optimizer' key is not present in the "
+
+2022-05-07T12:39:14 | WARNING | py.warnings : /home/jupyter/mmf/mmf/utils/checkpoint.py:339: UserWarning: 'optimizer' key is not present in the checkpoint asked to be loaded. Skipping.
+  "'optimizer' key is not present in the "
+
+2022-05-07T12:39:14 | WARNING | py.warnings : /home/jupyter/mmf/mmf/utils/checkpoint.py:388: UserWarning: 'lr_scheduler' key is not present in the checkpoint asked to be loaded. Setting lr_scheduler's last_epoch to current_iteration.
+  "'lr_scheduler' key is not present in the "
+
+2022-05-07T12:39:14 | WARNING | py.warnings : /home/jupyter/mmf/mmf/utils/checkpoint.py:388: UserWarning: 'lr_scheduler' key is not present in the checkpoint asked to be loaded. Setting lr_scheduler's last_epoch to current_iteration.
+  "'lr_scheduler' key is not present in the "
+
+2022-05-07T12:39:14 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T12:39:14 | INFO | mmf.utils.checkpoint : Current num updates: 0
+2022-05-07T12:39:14 | INFO | mmf.utils.checkpoint : Current iteration: 0
+2022-05-07T12:39:14 | INFO | mmf.utils.checkpoint : Current epoch: 0
+2022-05-07T12:39:14 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-07T12:39:14 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T12:39:32 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/vilbert/save/hateful_memes_vilbert_57881649/reports/hateful_memes_run_test_2022-05-07T12:39:32.csv
+2022-05-07T12:39:32 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 32
+2022-05-07T12:39:32 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:09:24 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:09:24 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_vilbert.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/vilbert_final.pth', 'evaluation.predict=true'])
+2022-05-07T13:09:24 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:09:24 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:09:24 | INFO | mmf_cli.run : Using seed 25128183
+2022-05-07T13:09:24 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:09:25 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:09:25 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:09:25 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:09:25 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:09:31 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:09:31 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:09:31 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:09:32 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:09:32 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:09:32 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:09:32 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:09:32 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:09:32 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:09:32 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-07T13:09:32 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:09:49 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/vilbert/save/hateful_memes_vilbert_25128183/reports/hateful_memes_run_test_2022-05-07T13:09:49.csv
+2022-05-07T13:09:49 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 32
+2022-05-07T13:09:49 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:20:26 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:20:26 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_vilbert.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/vilbert_final.pth', 'evaluation.predict=true'])
+2022-05-07T13:20:26 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:20:26 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:20:26 | INFO | mmf_cli.run : Using seed 26649739
+2022-05-07T13:20:26 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:20:27 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:20:27 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:20:27 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:20:27 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:20:32 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:20:32 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:20:32 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:20:34 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:20:34 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:20:34 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:20:34 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:20:34 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:20:34 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:20:34 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-07T13:20:34 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:20:51 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/vilbert/save/hateful_memes_vilbert_26649739/reports/hateful_memes_run_test_2022-05-07T13:20:51.csv
+2022-05-07T13:20:51 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 32
+2022-05-07T13:20:51 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:21:39 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:21:39 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_vilbert.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=val', 'checkpoint.resume=save/vilbert_final.pth', 'evaluation.predict=true'])
+2022-05-07T13:21:39 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:21:39 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:21:39 | INFO | mmf_cli.run : Using seed 39335271
+2022-05-07T13:21:39 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:21:39 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:21:39 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:21:39 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:21:39 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:21:45 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:21:45 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:21:45 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:21:46 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:21:46 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:21:46 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:21:46 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:21:46 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:21:46 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:21:46 | INFO | mmf.trainers.core.evaluation_loop : Starting val inference predictions
+2022-05-07T13:21:46 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:21:55 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/vilbert/save/hateful_memes_vilbert_39335271/reports/hateful_memes_run_val_2022-05-07T13:21:55.csv
+2022-05-07T13:21:55 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 16
+2022-05-07T13:21:55 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
+2022-05-07T13:23:36 | INFO | mmf : Logging to: ./save/train.log
+2022-05-07T13:23:36 | INFO | mmf_cli.run : Namespace(config_override=None, local_rank=None, opts=['config=infer_vilbert.yaml', 'model=vilbert', 'dataset=hateful_memes', 'run_type=test', 'checkpoint.resume=save/vilbert_final.pth', 'evaluation.predict=true'])
+2022-05-07T13:23:36 | INFO | mmf_cli.run : Torch version: 1.9.0+cu102
+2022-05-07T13:23:36 | INFO | mmf.utils.general : CUDA Device 0 is: Tesla T4
+2022-05-07T13:23:36 | INFO | mmf_cli.run : Using seed 36947160
+2022-05-07T13:23:36 | INFO | mmf.trainers.mmf_trainer : Loading datasets
+2022-05-07T13:23:37 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:23:37 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:23:37 | INFO | mmf.datasets.multi_datamodule : Multitasking disabled by default for single dataset training
+2022-05-07T13:23:37 | INFO | mmf.trainers.mmf_trainer : Loading model
+2022-05-07T13:23:43 | INFO | mmf.trainers.mmf_trainer : Loading optimizer
+2022-05-07T13:23:43 | INFO | mmf.trainers.mmf_trainer : Loading metrics
+2022-05-07T13:23:43 | INFO | mmf.utils.checkpoint : Loading checkpoint
+2022-05-07T13:23:44 | WARNING | mmf : Key data_parallel is not present in registry, returning default value of None
+2022-05-07T13:23:44 | WARNING | mmf : Key distributed is not present in registry, returning default value of None
+2022-05-07T13:23:44 | INFO | mmf.utils.checkpoint : Checkpoint loaded.
+2022-05-07T13:23:44 | INFO | mmf.utils.checkpoint : Current num updates: 11000
+2022-05-07T13:23:44 | INFO | mmf.utils.checkpoint : Current iteration: 11000
+2022-05-07T13:23:44 | INFO | mmf.utils.checkpoint : Current epoch: 47
+2022-05-07T13:23:44 | INFO | mmf.trainers.core.evaluation_loop : Starting test inference predictions
+2022-05-07T13:23:44 | INFO | mmf.common.test_reporter : Predicting for hateful_memes
+2022-05-07T13:25:59 | INFO | mmf.common.test_reporter : Wrote predictions for hateful_memes to /home/jupyter/final-project/vilbert/save/hateful_memes_vilbert_36947160/reports/hateful_memes_run_test_2022-05-07T13:25:59.csv
+2022-05-07T13:25:59 | INFO | mmf.trainers.core.evaluation_loop : Finished predicting. Loaded 235
+2022-05-07T13:25:59 | INFO | mmf.trainers.core.evaluation_loop :  -- skipped 0 batches.
