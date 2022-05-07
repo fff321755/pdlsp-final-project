@@ -3,7 +3,7 @@ training:
   trainer: mmf
   seed: 41712739
   experiment_name: run
-  max_updates: 22000
+  max_updates: 11750
   max_epochs: null
   log_interval: 100
   logger_level: info
