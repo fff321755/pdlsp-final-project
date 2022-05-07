@@ -1,9 +1,9 @@
 config_version: 1.0
 training:
   trainer: mmf
-  seed: 51924496
+  seed: 28759022
   experiment_name: run
-  max_updates: 11750
+  max_updates: 22000
   max_epochs: null
   log_interval: 100
   logger_level: info
@@ -77,7 +77,7 @@ evaluation:
   - binary_f1
   - roc_auc
   use_cpu: false
-  predict: false
+  predict: 'true'
   predict_file_format: csv
   reporter:
     type: file
@@ -179,10 +179,18 @@ dataset_config:
               - 0.12145835
               - 0.14380469
     return_features_info: true
+    is_multilabel: true
+  annotations:
+    train:
+    - hateful_memes/defaults/annotations/train.jsonl
+    val:
+    - hateful_memes/defaults/annotations/train.jsonl
+    test:
+    - hateful_memes/defaults/annotations/train.jsonl
 datasets: hateful_memes
 model: visual_bert
-config: finetune_visual_bert.yaml
-run_type: train_inference
+config: infer_visual_bert.yaml
+run_type: test
 optimizer:
   allow_unused_parameters: false
   enable_state_sharding: false
@@ -194,7 +202,7 @@ scheduler:
   type: warmup_linear
   params:
     num_warmup_steps: 2000
-    num_training_steps: 11750
+    num_training_steps: 22000
 env:
   cache_dir: /home/jupyter/.cache/torch/mmf
   dataset_zoo: configs/zoo/datasets.yaml
@@ -214,14 +222,13 @@ distributed:
   world_size: 1
   no_spawn: false
 checkpoint:
-  resume: false
+  resume: save/visual_bert_final
   resume_file: null
   resume_best: false
-  resume_pretrained: true
-  resume_zoo: visual_bert.pretrained.coco
+  resume_pretrained: false
+  resume_zoo: null
   zoo_config_override: false
-  pretrained_state_mapping:
-    model.bert: model.bert
+  pretrained_state_mapping: {}
   max_to_keep: -1
   save_git_details: true
   reset:
@@ -233,5 +240,5 @@ multitasking:
   enabled: true
   type: size_proportional
   params: {}
-start_rank: 0
 device_id: 0
+start_rank: 0

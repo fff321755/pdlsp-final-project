@@ -36,10 +36,10 @@ topk=${1:--1}
 cp ./data/hm_vgattr3636.tsv ./data/HM_img.tsv
 
 python pretrain_bertO.py --seed 42 --taskMaskLM --taskMatched --wordMaskRate 0.15 --train pretrain --tsv --tr bert-large-uncased \
---batchSize 16 --lr 0.25e-5 --epochs 4 --num_features 36 --loadpre ./data/pytorch_model.bin --topk $topk
+--batchSize 16 --lr 0.25e-5 --epochs 2 --num_features 36 --loadpre ./data/pytorch_model.bin --topk $topk
 
 python hm.py --seed 42 --model O \
---train train --valid dev_seen --test dev_seen --lr 1e-5 --batchSize 8 --tr bert-large-uncased --epochs 5 --tsv \
+--train train --valid dev_seen --test dev_seen --lr 1e-5 --batchSize 8 --tr bert-large-uncased --epochs 3 --tsv \
 --num_features 36 --loadpre ./data/LAST_BO.pth --contrib --exp O36 --topk $topk
 
 python hm.py --seed 42 --model O \
