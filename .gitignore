@@ -1,3 +1,6 @@
 *.ckpt
 *.pth
-
+/input/
+vilio/data
+vilio/ernie-vil
+vilio/py-bottom-up-attention/data
