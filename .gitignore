@@ -1,6 +1,6 @@
 *.ckpt
 *.pth
-/input/
-vilio/data
-vilio/ernie-vil
-vilio/py-bottom-up-attention/data
+uniter-oscar/input/
+uniter-oscar/vilio/data
+uniter-oscar/vilio/ernie-vil
+uniter-oscar/vilio/py-bottom-up-attention/data
