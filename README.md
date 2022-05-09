@@ -192,11 +192,11 @@ Compare our AUROC performance with the competition leader board, we would be ran
 
 
 ### References
-[1] [The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes](https://arxiv.org/pdf/2005.04790.pdf)
-[2] [The Risk of Racial Bias in Hate Speech Detection](https://aclanthology.org/P19-1163/)
-[3] [UNITER: UNiversal Image-TExt Representation Learning](https://arxiv.org/abs/1909.11740)
-[4] [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks]()
-[5] [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks](https://arxiv.org/pdf/1908.02265.pdf)
-[6] [VISUALBERT: A SIMPLE AND PERFORMANT BASELINE FOR VISION AND LANGUAGE](https://arxiv.org/pdf/1908.03557.pdf)
-[7] [MMF, a PyTorch powered MultiModal Framework](mmf.sh)
-[8] [Vilio: State-of-the-art VL models in PyTorch & PaddlePaddle](https://github.com/Muennighoff/vilio)
+[1] [The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes](https://arxiv.org/pdf/2005.04790.pdf). 
+[2] [The Risk of Racial Bias in Hate Speech Detection](https://aclanthology.org/P19-1163/)  
+[3] [UNITER: UNiversal Image-TExt Representation Learning](https://arxiv.org/abs/1909.11740)  
+[4] [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks](https://arxiv.org/pdf/2004.06165.pdf) 
+[5] [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks](https://arxiv.org/pdf/1908.02265.pdf)  
+[6] [VISUALBERT: A SIMPLE AND PERFORMANT BASELINE FOR VISION AND LANGUAGE](https://arxiv.org/pdf/1908.03557.pdf)  
+[7] [MMF, a PyTorch powered MultiModal Framework](https://mmf.sh/)  
+[8] [Vilio: State-of-the-art VL models in PyTorch & PaddlePaddle](https://github.com/Muennighoff/vilio)  
