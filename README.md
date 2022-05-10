@@ -36,7 +36,6 @@ The brief file structure is as follows:
 ```
 pdlsp-final-project/
 ├── dev.jsonl
-├── esmemble.ipynb
 ├── eval.ipynb
 ├── random_forest.joblib
 ├── test.jsonl
@@ -164,7 +163,7 @@ cd..
 
 #### Demo
 
-Run `emsemble.ipynb`
+Run `eval.ipynb`
 
 ### Results & Observation
 The following table illustrates the accuracy and ROC AUC score on single models.
